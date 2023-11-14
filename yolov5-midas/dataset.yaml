@@ -1,0 +1,14 @@
+path: /content/drive/MyDrive/Dataset_12th_July
+train: ../train/images
+test: ../test/images
+val: ../valid/images
+
+nc: 6
+names: ['HMV', 'LMV', 'Pedestrian', 'RoadDamages', 'SpeedBump', 'UnsurfacedRoad']
+
+roboflow:
+  workspace: p16-81bkd
+  project: depth-estimation
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/p16-81bkd/depth-estimation/dataset/4
