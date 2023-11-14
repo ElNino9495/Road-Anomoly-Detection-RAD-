@@ -35,6 +35,15 @@ import pkg_resources as pkg
 import torch
 import torchvision
 import yaml
+
+try:
+    import ultralytics
+
+    assert hasattr(ultralytics, '__version__')  # verify package is not directory
+except (ImportError, AssertionError):
+    os.system('pip install -U ultralytics')
+    import ultralytics
+
 from ultralytics.yolo.utils.checks import check_requirements
 
 from utils import TryExcept, emojis
